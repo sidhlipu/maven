@@ -62,6 +62,18 @@ mvn -h
 mvn archetype:generate
 
 # Choose a number, we are choosing 981 for org.apache.maven.archetypes:maven-archetype-quickstart version
+
+Define value for property 'groupId': sampleapp
+Define value for property 'artifactId': sampleapp
+Define value for property 'version' 1.0-SNAPSHOT: : 
+Define value for property 'package' sampleapp: : 
+Confirm properties configuration:
+groupId: sampleapp
+artifactId: sampleapp
+version: 1.0-SNAPSHOT
+package: sampleapp
+ Y: : Y
+ 
 ```
 
 
