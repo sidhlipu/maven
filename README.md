@@ -76,6 +76,47 @@ package: sampleapp
  
 ```
 
+# POM File
+1. POM is an acronym for Project Object Model. 
+2. The pom.xml file contains information of project and configuration information for the maven to build the project such as dependencies, build directory, source directory, test source directory, plugin, goals etc.
+3. Maven reads the porn.xml file, then executes the goal.
+
+## Minimal POM.
+The minimum requirement for a POM are the following:
+
+1. project root
+2. modelVersion - should be set to 4.0.0
+3. groupId - the id of the project's group.
+4. artifactId - the id of the artifact (project)
+5. version - the version of the artifact under the specified group
+
+
+```
+<project>
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <groupId>com.mycompany.app</groupId>
+  <artifactId>my-app</artifactId>
+  <version>1</version>
+</project>
+```
+
+# Compile the code
+```
+mvn compile
+```
+
+# Package the Maven Project 
+```
+mvn package
+```
+
+# To run the application 
+```
+java -jar sampleapp-1.0-SNAPSHOT.jar
+# Open http://localhost:7000/
+
+```
 
 
 
